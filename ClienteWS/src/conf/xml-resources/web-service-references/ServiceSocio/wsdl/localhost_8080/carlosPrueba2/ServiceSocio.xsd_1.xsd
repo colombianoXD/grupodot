@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://webservices.prueba/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://webservices.prueba/">
+
+<xs:element name="ConsultarSocioNombre" type="tns:ConsultarSocioNombre"/>
+
+<xs:element name="ConsultarSocioNombreResponse" type="tns:ConsultarSocioNombreResponse"/>
+
+<xs:element name="generarCotizacion" type="tns:generarCotizacion"/>
+
+<xs:element name="generarCotizacionResponse" type="tns:generarCotizacionResponse"/>
+
+<xs:complexType name="ConsultarSocioNombre">
+<xs:sequence>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ConsultarSocioNombreResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="generarCotizacion">
+<xs:sequence>
+<xs:element name="montoSolicitado" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="generarCotizacionResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:cotizacion" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cotizacion">
+<xs:sequence>
+<xs:element name="codigoRespuesta" type="xs:string" minOccurs="0"/>
+<xs:element name="mensajeRespuesta" type="xs:string" minOccurs="0"/>
+<xs:element name="nombreSocio" type="xs:string" minOccurs="0"/>
+<xs:element name="pagoTotalCredito" type="xs:string" minOccurs="0"/>
+<xs:element name="tasaInteres" type="xs:string" minOccurs="0"/>
+<xs:element name="valorCuotaMensual" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

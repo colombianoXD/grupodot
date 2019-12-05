@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/carlosPrueba2/ServiceSocio?wsdl" uri="wsdl/localhost_8080/carlosPrueba2/ServiceSocio.wsdl"/>
+    <system systemId="http://localhost:8080/carlosPrueba2/ServiceSocio?xsd=1" uri="wsdl/localhost_8080/carlosPrueba2/ServiceSocio.xsd_1.xsd"/>
+</catalog>
